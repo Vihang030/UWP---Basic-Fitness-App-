@@ -1,0 +1,85 @@
+﻿<Page
+    x:Class="FitnessApp.ArticlePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FitnessApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <RelativePanel>
+
+            <Button Name="HamburgerButton" FontFamily="segoe MDL2 Assets" Content="&#xE700;" FontSize="26" Click="HamburgerButton_Click"></Button>
+            <SplitView Name="MySplitView" CompactPaneLength="0" Margin="0,40,0,0" OpenPaneLength="50" DisplayMode="CompactInline">
+                <SplitView.Pane>
+                    <StackPanel>
+                        <Button Name="Home" FontFamily="segoe MDL2 Assets" Content="&#xE80F;" FontSize="26" Click="HomeButton_Click"></Button>
+                        <Button Name="Article" FontFamily="segoe MDL2 Assets" Content="&#xE7C3;" FontSize="26" Click="ArticleButton_Click" ></Button>
+                    </StackPanel>
+                </SplitView.Pane>
+            </SplitView>
+        </RelativePanel>
+
+        
+        <StackPanel Margin="10,20,0,0">
+            <StackPanel>
+                <TextBlock Text="Read the article for better result" FontSize="28" Margin="0,50,0,20" />
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontStyle="Oblique">1. Eat Up</TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="400" TextWrapping="Wrap" Margin="20,0,20,20">
+                    Aim for a gram of protein per pound of your body weight every day. So if you weigh 180 pounds, eat 180 grams. 
+                    Take in starchy carbs like potatoes, rice, and oats; and snack on high-calorie (but healthy) foods 
+                    like nuts, seeds, and other sources of good fats. If you don’t have the time or energy to commit to anything else, 
+                    just remember to eat a lot of the right foods every day. 
+                </TextBlock>
+                
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontStyle="Oblique">2. Train better, not harder</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                
+                <TextBlock Width="400" TextWrapping="Wrap" Margin="20,0,20,20">
+                   You can stimulate muscle growth with very few exercises as long as they’re done with heavy
+                    weight and they activate as many muscle fibers as possible. The workouts here have only four 
+                    moves per session, but they’ll be anything but easy. If you’re the type who’s used to light 
+                    circuits or bodybuilding routines that try to isolate every muscle, this is just what you need to grow.
+
+                </TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontStyle="Oblique">3. Rest</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+
+                <TextBlock Width="400" TextWrapping="Wrap" Margin="20,0,20,20">
+                   Getting eight hours of sleep per night is crucial for growth-hormone release.
+                    “A nap every day in addition is even better if you can get it,” Bruno adds. In between
+                    workouts, get massages or use a foam roller to work out knots in your muscles and improve
+                    blood flow. Making these part of your routine enhances recovery.
+                </TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontStyle="Oblique">3. Track everything you can</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="400" TextWrapping="Wrap" Margin="20,0,20,20">
+                   Track your calories and macros by using apps like myFitnessPal. Once a week, weigh yourself in the morning after you’ve used the 
+                    toilet and before you eat or drink anything. You should gain about a pound per week. (If you don’t, you’re not eating enough.)
+                </TextBlock>
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+</Page>
